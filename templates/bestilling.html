@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Bestill fotballutstyr</h2>
+
+{% if navn %}
+    <h3>Takk for bestillingen!</h3>
+    <p>Navn: {{ navn }}</p>
+    <p>Produkt: {{ produkt }}</p>
+    <p>Antall: {{ antall }}</p>
+
+{% else %}
+
+    <form method="POST">
+
+        <label for="navn">Navnet ditt:</label>
+        <input type="text" id="navn" name="navn" required>
+
+        <label for="produkt">Velg produkt:</label>
+        <select id="produkt" name="produkt" required>
+            <option value="">Velg et produkt</option>
+            <option value="Fotball">Fotball - 299 kr</option>
+            <option value="Fotballsko">Fotballsko - 799 kr</option>
+            <option value="Fotballdrakt">Fotballdrakt - 499 kr</option>
+            <option value="Leggskinn">Leggskinn - 149 kr</option>
+        </select>
+
+        <label for="antall">Antall:</label>
+        <input type="number" id="antall" name="antall"
+               min="1" max="10" required>
+
+        <button type="submit">Send bestilling</button>
+
+    </form>
+
+{% endif %}
+
+{% endblock %}

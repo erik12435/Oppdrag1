@@ -1,0 +1,81 @@
+
+/* Bestemmer skrifttype, bakgrunnsfarge og tekstfarge på hele nettsiden */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    color: #222;
+}
+
+/* Lager den grønne toppen på nettsiden */
+header {
+    background-color: #198754;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Lager litt avstand mellom overskriften og menyen */
+nav {
+    margin-top: 15px;
+}
+
+/* Bestemmer hvordan lenkene i menyen skal se ut */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Understreker lenkene når man holder musepekeren over dem */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Lager et hvitt felt rundt innholdet på sidene */
+main {
+    background-color: white;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Gjør overskriftene h2 grønne */
+h2 {
+    color: #198754;
+}
+
+/* Gjør at bilder ikke blir bredere enn plassen de har */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Plasserer teksten til skjemafeltene på egne linjer */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Gir skrivefelter, nedtrekkslister og knapper litt innvendig plass */
+input, select, button {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Gjør bestillingsknappen grønn med hvit tekst */
+button {
+    background-color: #198754;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Lager en mørk bunn på nettsiden med hvit tekst */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

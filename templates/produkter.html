@@ -1,0 +1,44 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h2>Våre produkter</h2>
+
+<h3>Fotball</h3>
+<img src="{{ url_for('static', filename='bilder/fotball.jpg') }}"
+     alt="Fotball" width="200">
+<p>En god fotball til trening og kamp.</p>
+<p>Pris: 299 kr</p>
+
+<hr>
+
+<h3>Fotballsko</h3>
+<img src="{{ url_for('static', filename='bilder/sko.jpg') }}"
+     alt="Fotballsko" width="200">
+<p>Fotballsko til trening og kamp.</p>
+<p>Pris: 799 kr</p>
+
+<hr>
+
+<h3>Fotballdrakt</h3>
+<img src="{{ url_for('static', filename='bilder/drakt.jpg') }}"
+     alt="Fotballdrakt" width="200">
+<p>En drakt til trening og kamp.</p>
+<p>Pris: 499 kr</p>
+
+<hr>
+
+<h3>Leggskinn</h3>
+<img src="{{ url_for('static', filename='bilder/leggskinn.jpg') }}"
+     alt="Leggskinn" width="200">
+<p>Beskyttelse for beina når du spiller fotball.</p>
+<p>Pris: 149 kr</p>
+
+<hr>
+
+<a href="{{ url_for('bestilling') }}">Bestill produkter her</a>
+
+
+{% endblock %}
